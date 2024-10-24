@@ -1,0 +1,10 @@
+<h2>Amigos</h2>
+{{#each amigos}}
+<div>
+    <p>{{this.nome}}</p>
+    <button>
+        <a href='/amigo/{{this.id}}'>Detalhes</a>
+    </button>
+    
+</div>
+{{/each}}

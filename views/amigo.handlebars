@@ -1,0 +1,12 @@
+{{#with amigo}}
+<p>{{nome}}</p>
+<p>{{idade}}</p>
+<form action="/apagar/{{id}}" method="post">
+        <input type="submit" value="Apagar">
+    </form>
+    <button>
+        <a href="/formEditar/{{id}}">
+            Editar
+        </a>
+    </button>
+{{/with}} 

@@ -1,0 +1,16 @@
+
+{{#with amigo}}
+<h2>Editar amigo: {{nome}}</h2>
+<form action="/editar" method="post" class="form">
+<input type="hidden" name="id" value="{{id}}">
+    <div class="form-control">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Informe o nome do amigo" value="{{nome}}">
+    </div>
+    <div class="form-control">
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" placeholder="Informe a idade do amigo" value="{{idade}}">
+    </div>
+    <input type="submit" value="Editar">
+</form>
+{{/with}}
